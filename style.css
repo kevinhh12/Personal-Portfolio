@@ -1,0 +1,32 @@
+html{
+    background-color: #D9DFC6;
+    color: #333333d6;
+}
+
+h1{
+    background-color: #EFF3EA;
+    background: linear-gradient(to right, #EFF3EA, #D9DFC6);
+}
+
+h2{
+    background-color: #D9DFC6;
+}
+
+footer{
+    background-color: #FFF2C2;
+}
+
+a{
+    color: #213555;
+    font-weight: 200;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: aquamarine;
+    
+}
+
+
