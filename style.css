@@ -1,32 +1,24 @@
-html{
-    background-color: #D9DFC6;
-    color: #333333d6;
+.gradient-background {
+    background: linear-gradient(300deg, #FAF1E6, #FDFAF6, #E4EFE7);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+
+.custom-bg {
+    background: #FAF1E6;
 }
 
-h1{
-    background-color: #EFF3EA;
-    background: linear-gradient(to right, #EFF3EA, #D9DFC6);
-}
-
-h2{
-    background-color: #D9DFC6;
-}
-
-footer{
-    background-color: #FFF2C2;
-}
-
-a{
-    color: #213555;
-    font-weight: 200;
-}
-
-img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border-color: aquamarine;
+.content-1 img{
+    border-radius: 10%;
     
 }
 
+.custom-font{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.white{
+    color: white;
+}

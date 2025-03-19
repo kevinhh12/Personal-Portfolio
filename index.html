@@ -3,77 +3,136 @@
     <head>
         <meta charset="UTF-8">
         <title>Online Resume for Kevin</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Kevin Ho He</h1>
-        <img src="./1728201608346.jpeg" height = 100 alt="Kevin's Profile Picture">
-        <hr/>
-        <h2>Summary:</h2>
-        <p>I am multicultural as I was born in Venezuela and raised in China, and now I am studying in Canada.
-            I am a person who is always eager to learn new things. I am a quick learner and I am always looking for new challenges.
-            I love to play chess, and basketball and travel around the world with my friends and family. I am passionate about technology 
-            and I am always looking for new ways to improve my skills.
-        </p>
+        <section class="headers gradient-background " >
+            <div class="container" >
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-5 ">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="./svgs/file-binary.svg" alt="file-binary" height="20">
+                    <span class="custom-font fs-4">Kevin Ho He</span>
+                </a>
+                
+                </header>
+            </div>
+        
+        </section>
 
-        <h2>Education:</h2>
-        <ul>
-            <li>University of Alberta:
-                <ul>
-                    <li>Bachelor of Science in Computer Science -> 2022 - 2026(expected)</li>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <h2>Work Experience:</h2>
-        <ul>
-            <li>
-                I have made a project in schooled called Event Mate.
-                <ul>
-                    <li><a href = "https://github.com/CMPUT301F24Tcheese/cheese.git">Event Mate</a></li>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <h2>Skills:</h2>
-        <ul>
-            <li>
-                <h3>Programming Languages:</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>HTML</li>
-                    <li>SQL</li>
-                    <li>CSS</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Soft Skills:</h3>
-                <ul>
-                    <li>Teamwork</li>
-                    <li>Communication</li>
-                    <li>Problem Solving</li>
-                    <li>Time Management</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Languages:</h3>
-                <ul>
-                    <li>Spanish</li>
-                    <li>Chinese(Mandarin)</li>
-                    <li>Cantonese</li>
-                    <li>English</li>
-                </ul>
-            </li>
-        </ul>
-        <hr>
-        <a href = "./Contact.html">Contact Me</a>
-        <footer>
-            <p>© 2025 Kevin Ho He</p>
-        </footer>
+        <section class="content-1 custom-bg" >
+            <div class="container col-xxl-8 px-4 py-0">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-6" data-aos="flip-right">
+                    <img src="./img/1728201608346.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"  >
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
+                    <p class="lead">I have a multicultural background, born in Venezuela, raised in China, and currently studying in Canada. I am a quick learner with a strong passion for continuous growth and new challenges.
+                        Beyond academics, I enjoy playing chess and basketball, as well as traveling with friends and family. I am deeply passionate about technology and constantly seek opportunities to enhance my skills and knowledge.</p>
+                  </div>
+                </div>
+              </div>
+
+
+        </section>
+
+        <section class="content-2 custom-bg pt-5" >
+            <div class="album py-5 " >
+                <div class="container" >
+            
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col" data-aos="fade-up">
+                      <div class="card shadow-sm">
+                        <img src="./img/event_mate_logo-playstore.png" alt="logo">
+                        <div class="card-body">
+                          <p class="card-text">Developed an event management application enabling users to seamlessly create and join events through QR code scanning. The app utilizes Firebase to securely store user login information, including device identifiers, and integrates Google Maps to visually display event locations and participant positions in real-time. </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button onclick="window.location.href='https://github.com/CMPUT301F24Tcheese/cheese-mold.git';" 
+                                type="button" class="btn btn-sm btn-outline-secondary">
+                                
+                            View
+                        </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card shadow-sm">
+                        <img src="./img/tinder dog.png" alt="">
+                        <div class="card-body">
+                          <p class="card-text">This webpage is a front-end design showcasing a modern, clean, and responsive user interface. Built using HTML and CSS, it emphasizes intuitive navigation and visual appeal, featuring organized layouts, interactive elements, and attention-grabbing typography. Although it currently does not include scripting or backend integration, the design provides a strong foundation for future functionality and interactivity enhancements.
+
+                          </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button onclick="window.location.href='https://kevinhh12.github.io/TinderDog/'" class="btn btn-sm btn-outline-secondary">View</button>
+                              
+                
+                      </div>
+                    </div>
+
+        </section>
+
+        <section class="contact-info custom-bg  ">
+          <div class="container py-5 border-top d-flex justify-content-center">
+          <form class="col-md-10 col-sm-9 col-10 ">
+            <div class="form-group ">
+              <h2 class="custom-font my-3">Contact me</h2>
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+            <div class="form-group mt-2">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="container pt-2 ">
+              <button type="button" class="my-2 col-12 btn btn-outline-dark ">Sent</button>
+            </div>
+          </div>
+          
+          
+        </section>
+
+       
+
+
+        <section class="footer gradient-background">
+          <div class="container">
+            <footer class="d-flex justify-content-between py-4">
+              <div class="col-md-4 d-flex justify-content-start">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© Kevin Ho He</span>
+              </div>
+          
+              <ul class="nav col-md-4 d-flex justify-content-end list-unstyled ">
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/kevinhh12"><img src="./svgs/github.svg" alt="github" height="30"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/kevin-ho-he-81857732a/"><img src="./svgs/linkedin.svg" alt="linkedin" height="30"></a></li>
+              </ul>
+            </footer>
+          </div>
+
+        </section>
+
         
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
