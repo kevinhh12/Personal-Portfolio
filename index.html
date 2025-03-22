@@ -9,6 +9,11 @@
 
         <link rel="icon" href="./svgs/file-binary.svg">
 
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -46,21 +51,18 @@
         </section>
 
         <section class="content-2 custom-bg pt-5" >
+          <h2 class="container custom-font">Projects</h2>
             <div class="album py-5 " >
-                <div class="container" >
+                <div class="container " >
             
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 row1">
 
                     <div class="col" data-aos="fade-up">
                       <div class="card shadow-sm">
-                        <img src="./img/event_mate.png" alt="logo">
-                        <div class="card-body">
-                          <p class="card-text">Developed an event management application enabling users to seamlessly create and join events through QR code scanning. The app utilizes Firebase to securely store user login information, including device identifiers, and integrates Google Maps to visually display event locations and participant positions in real-time. </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button onclick="window.location.href='https://github.com/CMPUT301F24Tcheese/cheese-mold.git';" 
-                                type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            </div>
+                        <div class="img-container" onclick="window.location.href='https://github.com/CMPUT301F24Tcheese/cheese-mold.git';">
+                          <img src="./img/event_mate.png" alt="logo">
+                          <div class="overlay">
+                            <div class="text">Event Mate App</div>
                           </div>
                         </div>
                       </div>
@@ -68,35 +70,27 @@
                     
                     <div class="col" data-aos="fade-up" data-aos-delay="100">
                       <div class="card shadow-sm">
-                        <img src="./img/tinder dog.png" alt="">
-                        <div class="card-body">
-                          <p class="card-text">This webpage is a front-end design showcasing a modern, clean, and responsive user interface. Built using HTML and CSS, it emphasizes intuitive navigation and visual appeal, featuring organized layouts, interactive elements, and attention-grabbing typography. Although it currently does not include scripting or backend integration, the design provides a strong foundation for future functionality and interactivity enhancements.
+                        <div class="img-container" onclick="window.location.href='https://kevinhh12.github.io/TinderDog/';">
+                          <img src="./img/tinder dog.png" alt="">
+                          <div class="overlay">
+                            <div class="text">TinderDog Website</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button onclick="window.location.href='https://kevinhh12.github.io/TinderDog/'" class="btn btn-sm btn-outline-secondary">View</button>
-                            </div>
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card shadow-sm">
+                        <div class="img-container" onclick="window.location.href='https://kevinhh12.github.io/Simon-game/';">
+                          <img src="./img/simon.png" alt="">
+                          <div class="overlay">
+                            <div class="text">Simon Game</div>
                           </div>
                         </div>
                       </div>
                     </div>
 
                     
-                    <div class="col" data-aos="fade-up" data-aos-delay="100">
-                      <div class="card shadow-sm">
-                        <img src="./img/simon.png" alt="">
-                        <div class="card-body">
-                          <p class="card-text">Developed an interactive “Simon Game Challenge” using HTML, CSS, JavaScript, and jQuery to reinforce user memory through color and sound pattern matching. Implemented game logic, real-time input validation, dynamic UI animations, and sound effects.
-                          </p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <button onclick="window.location.href='https://kevinhh12.github.io/Simon-game/'" class="btn btn-sm btn-outline-secondary">View</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
 
 
@@ -116,9 +110,10 @@
                 <textarea name="message" class="form-control" id="message" rows="3" placeholder="Message" required></textarea>
               </div>
         
-              <div class="container pt-2">
-                <button type="submit" class="my-2 col-12 btn btn-outline-dark">Send</button>
+              <div>
+                <button type="submit" class="container my-4 col-12 btn btn-outline-dark">Send</button>
               </div>
+
             </form>
           </div>
         </section>
@@ -153,5 +148,7 @@
         <script>
           AOS.init();
         </script>
+
+        <script src="index.js"></script>
     </body>
 </html>

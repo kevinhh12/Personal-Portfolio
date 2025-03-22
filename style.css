@@ -22,3 +22,84 @@
 .white{
     color: white;
 }
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.col1{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.img-container:hover img {
+  filter: brightness(0%) grayscale(100%);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  font-family: 'DM Serif Display', serif;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.img-container:hover .text {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate__fadeInUp {
+  --animate-duration: 0.5s;
+}
