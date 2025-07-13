@@ -36,16 +36,19 @@
 }
 
 .img-container {
-  position: relative;
   width: 100%;
-  cursor: pointer;
+  aspect-ratio: 1.5 / 1; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .img-container img {
-  display: block;
   width: 100%;
-  height: auto;
-  transition: all 0.3s ease;
+  height: 100%;
+
 }
 
 .overlay {
